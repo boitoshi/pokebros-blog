@@ -1,0 +1,85 @@
+<h2>カントー地方のリーグ</h2>
+<h3>四天王②そのまま</h3>
+<div class="elite-four-member">
+    <img src="image_url" alt="四天王の画像" />
+    <h4>四天王：カンナ</h4>
+    <p>使用タイプ: <strong>こおりタイプ</strong></p>
+    <p>使用ポケモン: <strong>ラプラス、ジュゴン、...</strong></p>
+  </div>
+
+  <h3>四天王（時代ごと）②ボタン切り替え形式</h3>
+<button onclick="toggleGeneration(1)">初代</button>
+<button onclick="toggleGeneration(2)">第2世代</button>
+
+<div id="generation-1" style="display:block;">
+  <div class="elite-four-member">
+    <img src="image_url" alt="カンナの画像" />
+    <h4>カンナ（初代）</h4>
+    <p>使用ポケモン: ラプラス、ジュゴン、パルシェン、... </p>
+  </div>
+</div>
+
+<div id="generation-2" style="display:none;">
+  <div class="elite-four-member">
+    <img src="image_url" alt="カンナの画像" />
+    <h4>カンナ（第2世代）</h4>
+    <p>使用ポケモン: ラプラス、ジュゴン、... </p>
+  </div>
+</div>
+
+<h3>四天王③リスト形式</h3>
+<div class="elite-four-member">
+    <img src="kanan_image_url" alt="カンナの画像" class="elite-image"/>
+    <h4>四天王：カンナ</h4>
+    <p><strong>使用タイプ:</strong> こおり</p>
+    <p><strong>使用ポケモン:</strong> ラプラス、ジュゴン、パルシェン</p>
+  </div>
+
+  <h3>四天王④テーブル形式</h3>
+  <div class="table-responsive">
+    <table>
+      <tr>
+        <th>名前</th>
+        <th>使用タイプ</th>
+        <th>使用ポケモン</th>
+      </tr>
+      <tr>
+        <td>カンナ</td>
+        <td>こおり</td>
+        <td>ラプラス、ジュゴン、パルシェン</td>
+      </tr>
+    </table>
+  </div>
+
+<h2>ジョウト地方のリーグ</h2>
+<h2>ホウエン地方のリーグ</h2>
+
+<script>
+  function toggleGeneration(gen) {
+    document.getElementById('generation-1').style.display = gen === 1 ? 'block' : 'none';
+    document.getElementById('generation-2').style.display = gen === 2 ? 'block' : 'none';
+  }
+</script>
+
+
+<style>
+.elite-four-member {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.elite-image {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.table-responsive {
+    border: 1px solid black;
+  display: block;
+  width: 100%;
+  overflow-x: auto;
+}
+</style>
