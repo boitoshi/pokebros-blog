@@ -1,7 +1,7 @@
-<figure class="table-wrap">
+<div class="haishintable-container">
     <table class="haishintable">
         <thead>
-            <tr><th class="fixed-column">ポケモン</th><th>第一世代</th><th>第二世代</th><th>第三世代</th><th>第四世代</th><th>第五世代</th><th>第六世代</th><th>第七世代</th><th>第八世代</th><th>第九世代</th><th>HOME</th></tr></thead>
+            <tr><th class="fixed-column-midashi">ポケモン</th><th>第一世代</th><th>第二世代</th><th>第三世代</th><th>第四世代</th><th>第五世代</th><th>第六世代</th><th>第七世代</th><th>第八世代</th><th>第九世代</th><th>HOME<br>GO</th></tr></thead>
         <tbody><tr><td class="fixed-column">ミュウ<img src="https://www.pokebros.net/wp-content/uploads/2020/07/PokeIcon_151.png" alt=""></td><td>◯</td><td>×</td><td>◯</td><td>◯</td><td>×</td><td>◯</td><td>◯</td><td>◯</td><td>◯</td><td>◯</td></tr>
             <tr><td class="fixed-column">セレビィ<img src="https://www.pokebros.net/wp-content/uploads/2020/07/PokeIcon_251.png" alt=""></td><td></td><td>◯</td><td>◯</td><td>◯</td><td>×</td><td>◯</td><td>◯</td><td>◯</td><td>×</td><td>◯</td></tr>
             <tr><td class="fixed-column">ジラーチ<img src="https://www.pokebros.net/wp-content/uploads/2020/07/PokeIcon_385.png" alt=""></td><td></td><td>×</td><td>◯</td><td>◯</td><td>◯</td><td>◯</td><td>◯</td><td>◯</td><td>×</td><td>◯</td></tr>
@@ -27,7 +27,7 @@
             <tr><td class="fixed-column">モモワロウ<img src="https://www.pokebros.net/wp-content/uploads/2021/12/SV-PokeIcon_1025-e1706056975347.png" alt=""></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>◯</td><td>×</td></tr>
         </tbody>
     </table>
-</figure>
+</div>
 
 <style>
 
@@ -44,9 +44,12 @@
     }
     }
 
+.haishintable-container {
+  overflow-x: auto; /* 横スクロールを有効にする */
+  margin: 0 auto; /* 左右の余白を自動調整 */
+}
 
-
-  .haishintable {
+.haishintable {
   position: relative;
   width: 100%;
   border-collapse: collapse;
@@ -60,35 +63,42 @@
 }
 
 
-  .haishintable .fixed-column {
+.haishintable .fixed-column {
   position: sticky;
   left: 0;
   background-color: #fffaf2; /* 背景色を設定 */
   z-index: 1; /* 他のセルより前面に表示 */
 }
 
-  table.haishintable thead {
-      background-color: #ffbd59;
-      border-bottom:2px solid #000000;/*見出し枠の下だけ太線に*/
-      text-align: center; /* テキストを中央寄せ */
-      padding: 8px 10px;
-      font-size: 1.1rem;
-      color:#ffffff;/*文字色*/
-  }
+.haishintable .fixed-column-midashi {
+  position: sticky;
+  left: 0;
+  background-color: #ffbd59; /* 背景色を設定 */
+  z-index: 1; /* 他のセルより前面に表示 */
+}
 
-  table.haishintable td {
-      border-collapse: collapse;
-      background-color: #fffaf2;
-      padding: 0.3em;/*余白*/
-      text-align: center; 
-  }
+.haishintable thead {
+  background-color: #ffbd59;
+  border-bottom:2px solid #000000;/*見出し枠の下だけ太線に*/
+  text-align: center; /* テキストを中央寄せ */
+  padding: 8px 10px;
+  font-size: 1.1rem;
+  color:#ffffff;/*文字色*/
+}
 
-  .haishintable img {
-        width: auto; /* 固定したい幅 */
-        height: 15px; /* 高さを自動調整 */
-    }
+.haishintable td {
+  border-collapse: collapse;
+  background-color: #fffaf2;
+  padding: 0.3em;/*余白*/
+  text-align: center; 
+}
+
+.haishintable img {
+  width: auto; /* 固定したい幅 */
+  height: 15px; /* 高さを自動調整 */
+}
     
 tr>*:empty{
-    background-image: linear-gradient(to right top, transparent calc(50% - 0.5px), #999 50%, #999 calc(50% + 0.5px), transparent calc(50% + 1px)) !important;
+  background-image: linear-gradient(to right top, transparent calc(50% - 0.5px), #999 50%, #999 calc(50% + 0.5px), transparent calc(50% + 1px)) !important;
 }
 </style>
