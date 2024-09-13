@@ -6,3 +6,4 @@ WordPressのブログでカスタムHTMLブロックで表示したいものの�
 - [幻ポケモンの各世代配信・入手可能一覧のテーブル](maboroshi-list.html)
 - [レイドイベント等のまとめテーブル](raid-event-matome.html)
 - [レイド対策ポケモン](raid-recommend-pokemon.html)
+- [四天王記事のリスト](elitefour-champion-list.html)
