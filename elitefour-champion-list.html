@@ -35,21 +35,61 @@
     <p><strong>使用ポケモン:</strong> ラプラス、ジュゴン、パルシェン</p>
   </div>
 
-  <h3>四天王④テーブル形式</h3>
-  <div class="table-responsive">
-    <table>
-      <tr>
-        <th>名前</th>
-        <th>使用タイプ</th>
-        <th>使用ポケモン</th>
+<h3>四天王④テーブル形式</h3>
+<p>
+  <b>四天王名</b>：カンナ
+  <br>
+  <b>使用タイプ</b>：こおり
+</p> 
+<p>
+  <b>特徴</b>
+  <br>
+  クールビューティーな外見とは裏腹に、ポケモンたちには愛情を注いでいる。
+</p> 
+<table class="table-elite-four">
+    <tbody>
+      <tr><!-- ここに画像？　center widthを指定 -->
+        <td>トレーナー画像</td>
+        <td>ポケモン画像①</td>
+        <td>ポケモン画像②</td>
+        <td>ポケモン画像③</td>
+        <td>ポケモン画像④</td>
+        <td>ポケモン画像⑤</td>
+      </tr>
+      <tr><!-- tdにalign="center"を指定 -->
+        <td align="center">カンナ</td>
+        <td align="center">ジュゴン</td>
+        <td align="center">パルシェン</td>
+        <td align="center">ヤドラン</td>
+        <td align="center">ルージュラ</td>
+        <td align="center">ラプラス</td>
       </tr>
       <tr>
-        <td>カンナ</td>
-        <td>こおり</td>
-        <td>ラプラス、ジュゴン、パルシェン</td>
+        <td>備考①<br>exバトル形式シングル</td>
+        <td>レベル</td>
+        <td>レベル</td>
+        <td>レベル</td>
+        <td>レベル</td>
+        <td>レベル</td>
       </tr>
-    </table>
-  </div>
+      <tr><!-- tdにalign="center"を指定 -->
+        <td align="center">備考②<br>空欄</td>
+        <td align="center">タイプアイコン</td>
+        <td align="center">タイプアイコン</td>
+        <td align="center">タイプアイコン</td>
+        <td align="center">タイプアイコン</td>
+        <td align="center">タイプアイコン</td>
+      </tr>
+      <tr><!-- tdにalign="center"を指定 -->
+        <td>謎</td>
+        <td>空行</td>
+        <td>空行</td>
+        <td>空行</td>
+        <td>空行</td>
+        <td>空行</td>
+      </tr>
+    </tbody>
+  </table>
 
 <h2>ジョウト地方のリーグ</h2>
 <h2>ホウエン地方のリーグ</h2>
@@ -63,6 +103,44 @@
 
 
 <style>
+.table-elite-four {
+  width: auto; /* ブラウザに合わせて適度に */
+  max-width: 100%; /* 最大幅を100%に */
+  border-collapse: collapse;
+  font-size: 12px; /* テキストサイズを12pxに */
+  margin: 0 auto; /* 中央揃え */
+}
+
+.table-elite-four th, .table-elite-four td {
+  border: 1px solid #000; /* 罫線1px */
+  padding: 8px;
+  text-align: left;
+}
+
+.table-elite-four th {
+  background-color: #f2f2f2;
+}
+
+.table-elite-four td {
+  background-color: #fff;
+}
+
+.table-elite-four th, .table-elite-four td {
+  border-radius: 8px; /* 四角を丸く */
+}
+
+@media screen and (max-width: 600px) {
+  .table-elite-four {
+    width: 100%; /* モバイルでは幅を100%に */
+    font-size: 10px; /* テキストサイズを小さく */
+  }
+
+  .table-elite-four th, .table-elite-four td {
+    padding: 4px; /* パディングを小さく */
+  }
+}
+
+
 .elite-four-member {
   display: flex;
   flex-direction: column;
