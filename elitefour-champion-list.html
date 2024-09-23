@@ -1,11 +1,4 @@
 <h2>カントー地方のリーグ</h2>
-<h3>四天王②そのまま</h3>
-<div class="elite-four-member">
-    <img src="image_url" alt="四天王の画像" />
-    <h4>四天王：カンナ</h4>
-    <p>使用タイプ: <strong>こおりタイプ</strong></p>
-    <p>使用ポケモン: <strong>ラプラス、ジュゴン、...</strong></p>
-  </div>
 
   <h3>四天王（時代ごと）②ボタン切り替え形式</h3>
 <button onclick="toggleGeneration(1)">初代</button>
@@ -27,14 +20,6 @@
   </div>
 </div>
 
-<h3>四天王③リスト形式</h3>
-<div class="elite-four-member">
-    <img src="kanan_image_url" alt="カンナの画像" class="elite-image"/>
-    <h4>四天王：カンナ</h4>
-    <p><strong>使用タイプ:</strong> こおり</p>
-    <p><strong>使用ポケモン:</strong> ラプラス、ジュゴン、パルシェン</p>
-  </div>
-
 <h3>四天王④テーブル形式</h3>
 <p>
   <b>四天王名</b>：カンナ
@@ -49,12 +34,12 @@
 <table class="table-elite-four">
     <tbody>
       <tr><!-- ここに画像？　center widthを指定 -->
-        <td>トレーナー画像</td>
-        <td>ポケモン画像①</td>
-        <td>ポケモン画像②</td>
-        <td>ポケモン画像③</td>
-        <td>ポケモン画像④</td>
-        <td>ポケモン画像⑤</td>
+        <th><img src="https://www.pokebros.net/wp-content/uploads/2024/09/四天王-カンナ-g1.png" alt="四天王カンナ"></th>
+        <th><img src="https://www.pokebros.net/wp-content/uploads/2024/09/0087ジュゴン-g1-red.png" alt="ジュゴン"></th>
+        <th><img src="https://www.pokebros.net/wp-content/uploads/2024/09/0091パルシェン-g1-red.png" alt="パルシェン"></th>
+        <th><img src="https://www.pokebros.net/wp-content/uploads/2024/09/0080ヤドラン-g1-red.png" alt="ヤドラン"></th>
+        <th><img src="https://www.pokebros.net/wp-content/uploads/2024/09/0124ルージュラ-g1-red.png" alt="ルージュラ"></th>
+        <th><img src="https://www.pokebros.net/wp-content/uploads/2024/09/0131ラプラス-g1-red.png" alt="ラプラス"></th>
       </tr>
       <tr><!-- tdにalign="center"を指定 -->
         <td align="center">カンナ</td>
@@ -72,7 +57,7 @@
         <td>レベル</td>
         <td>レベル</td>
       </tr>
-      <tr><!-- tdにalign="center"を指定 -->
+      <tr><!-- なくてもいいかな-->
         <td align="center">備考②<br>空欄</td>
         <td align="center">タイプアイコン</td>
         <td align="center">タイプアイコン</td>
@@ -80,16 +65,81 @@
         <td align="center">タイプアイコン</td>
         <td align="center">タイプアイコン</td>
       </tr>
-      <tr><!-- tdにalign="center"を指定 -->
+      <!-- <tr>
         <td>謎</td>
         <td>空行</td>
         <td>空行</td>
         <td>空行</td>
         <td>空行</td>
         <td>空行</td>
-      </tr>
+      </tr> -->
     </tbody>
   </table>
+
+<h3>テーブル形式（切り替え）</h3h3>
+  <div class="button-container">
+    <button onclick="showTable('table1')">テーブル1</button>
+    <button onclick="showTable('table2')">テーブル2</button>
+  </div>
+  
+  <div id="table1" class="table-container">
+    <table class="table-elite-four">
+      <thead>
+        <tr>
+          <th><img src="https://www.pokebros.net/wp-content/uploads/2024/09/四天王-カンナ-g1.png" alt="四天王カンナ"></th>
+          <th><img src="https://www.pokebros.net/wp-content/uploads/2024/09/0087ジュゴン-g1-red.png" alt="ジュゴン"></th>
+          <th><img src="https://www.pokebros.net/wp-content/uploads/2024/09/0091パルシェン-g1-red.png" alt="パルシェン"></th>
+          <th><img src="https://www.pokebros.net/wp-content/uploads/2024/09/0080ヤドラン-g1-red.png" alt="ヤドラン"></th>
+          <th><img src="https://www.pokebros.net/wp-content/uploads/2024/09/0124ルージュラ-g1-red.png" alt="ルージュラ"></th>
+          <th><img src="https://www.pokebros.net/wp-content/uploads/2024/09/0131ラプラス-g1-red.png" alt="ラプラス"></th>
+      </tr>
+        <tr>
+          <td align="center">カンナ</td>
+          <td align="center">ジュゴン</td>
+          <td align="center">パルシェン</td>
+          <td align="center">ヤドラン</td>
+          <td align="center">ルージュラ</td>
+          <td align="center">ラプラス</td>
+        </tr>
+        <tr>
+          <td>備考①<br>exバトル形式シングル</td>
+          <td>レベル</td>
+          <td>レベル</td>
+          <td>レベル</td>
+          <td>レベル</td>
+          <td>レベル</td>
+        </tr>
+        <tr>
+          <td align="center">備考②<br>空欄</td>
+          <td align="center">タイプアイコン</td>
+          <td align="center">タイプアイコン</td>
+          <td align="center">タイプアイコン</td>
+          <td align="center">タイプアイコン</td>
+          <td align="center">タイプアイコン</td>
+        </tr>
+      </thead>
+    </table>
+  </div>
+  
+  <div id="table2" class="table-container" style="display:none;">
+    <table class="table-elite-four">
+      <thead>
+        <tr>
+          <th>別のテーブル</th>
+          <th>データ</th>
+          <th>データ</th>
+        </tr>
+        <tr>
+          <td align="center">データ1</td>
+          <td align="center">データ2</td>
+          <td align="center">データ3</td>
+        </tr>
+        <!-- 他の行 -->
+      </thead>
+    </table>
+  </div>
+
+
 
 <h2>ジョウト地方のリーグ</h2>
 <h2>ホウエン地方のリーグ</h2>
@@ -99,6 +149,14 @@
     document.getElementById('generation-1').style.display = gen === 1 ? 'block' : 'none';
     document.getElementById('generation-2').style.display = gen === 2 ? 'block' : 'none';
   }
+ 
+  function showTable(tableId) {
+  var tables = document.querySelectorAll('.table-container');
+  tables.forEach(function(table) {
+    table.style.display = 'none';
+  });
+  document.getElementById(tableId).style.display = 'block';
+}
 </script>
 
 
@@ -114,19 +172,15 @@
 .table-elite-four th, .table-elite-four td {
   border: 1px solid #000; /* 罫線1px */
   padding: 8px;
-  text-align: left;
 }
 
 .table-elite-four th {
-  background-color: #f2f2f2;
+  background-color: #ffbd59;
+  text-align: center;
 }
 
 .table-elite-four td {
-  background-color: #fff;
-}
-
-.table-elite-four th, .table-elite-four td {
-  border-radius: 8px; /* 四角を丸く */
+  background-color: #fffaf2;
 }
 
 @media screen and (max-width: 600px) {
@@ -139,25 +193,16 @@
     padding: 4px; /* パディングを小さく */
   }
 }
-
-
-.elite-four-member {
-  display: flex;
-  flex-direction: column;
+.button-container {
   text-align: center;
-  margin-bottom: 20px;
-}
-
-.elite-image {
-  max-width: 100%;
-  height: auto;
   margin-bottom: 10px;
 }
 
-.table-responsive {
-    border: 1px solid black;
-  display: block;
-  width: 100%;
-  overflow-x: auto;
+.button-container button {
+  padding: 10px 20px;
+  margin: 5px;
+  font-size: 14px;
+  cursor: pointer;
 }
+
 </style>
