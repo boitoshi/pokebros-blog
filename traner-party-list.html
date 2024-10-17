@@ -1,0 +1,254 @@
+<div class="accordion">
+    <div id="trainer-info">
+      <img src="wataru.png" alt="ワタル" class="trainer-image">
+      <span>ポケモントレーナー：ワタル</span>
+      <button onclick="togglePokemon()">【開く】</button>
+    </div>
+    <div id="pokemon-list" style="display: none;" class="pokemon-container">
+      <div class="pokemon">
+        <img src="kairyu.png" alt="カイリュー" class="pokemon-image">
+        <ul>
+          <li><strong>ポケモン名:</strong> カイリュー</li>
+          <li><strong>レベル:</strong> 78</li>
+          <li><strong>技:</strong> りゅうのまい、げきりん、かみなり、だいもんじ</li>
+        </ul>
+      </div>
+      <div class="pokemon">
+        <img src="gyarados.png" alt="ギャラドス" class="pokemon-image">
+        <ul>
+          <li><strong>ポケモン名:</strong> ギャラドス</li>
+          <li><strong>レベル:</strong> 74</li>
+          <li><strong>技:</strong> アクアテール、かみくだく、じしん、かみなり</li>
+        </ul>
+      </div>
+      <div class="pokemon">
+        <img src="gyarados.png" alt="ギャラドス" class="pokemon-image">
+        <ul>
+          <li><strong>ポケモン名:</strong> ギャラドス</li>
+          <li><strong>レベル:</strong> 74</li>
+          <li><strong>技:</strong> アクアテール、かみくだく、じしん、かみなり</li>
+        </ul>
+      </div>
+      <div class="pokemon">
+        <img src="gyarados.png" alt="ギャラドス" class="pokemon-image">
+        <ul>
+          <li><strong>ポケモン名:</strong> ギャラドス</li>
+          <li><strong>レベル:</strong> 74</li>
+          <li><strong>技:</strong> アクアテール、かみくだく、じしん、かみなり</li>
+        </ul>
+      </div>
+      <!-- 他のポケモンも追加できるよ -->
+    </div>
+  </div>
+
+<h3>バルペ参考ポケモン詳細</h3>
+<ul>
+    <li>枠線は丸く
+    <li>背景色は不要もしくはいつもの色にする。
+    <li>ポケモン名、レベル、技を表示する。
+    <li>技のタイプはアイコンにする。
+    <li>技の名前は太字にする。
+    <li>技の名前の下にはタイプを表示する。
+    <li>トレーナーのところには手持ちが何匹かわかるようにする。
+    <li>CSSをまとめる
+</ul>
+    <table class="roundy" width="250px" style="margin:inherit; background: #A284A2; border: 3px solid #5E2A84; border-collapse: separate;">
+    <tbody><tr>
+    <td width="50%">
+        <table class="roundy" style="margin:auto; background: #FFF;">
+            <tbody>
+                <tr>
+                    <td><img alt="Spr 1b 094.png" src="https://archives.bulbagarden.net/media/upload/b/b9/Spr_1b_094.png" decoding="async" loading="lazy" width="56" height="56" data-file-width="56" data-file-height="56">
+                    </td></tr></tbody></table>
+    </td>
+    <td rowspan="2" width="50%">
+            <table class="roundy" style="margin:auto; background: transparent; border-collapse:collapse;">
+                <tbody>
+                    <tr>
+                        <td style="text-align: center; line-height:12px;" colspan="2"><small>Types:</small>
+                        </td></tr>
+    <tr>
+    <td width="45px" style="text-align: center; font-size: 85%; line-height:12px; background: #704170; border-radius: 2px; -moz-border-radius: 2px; -webkit-border-radius: 2px; -khtml-border-radius: 2px; -icab-border-radius: 2px; -o-border-radius: 2px;">
+        <span style="color:#FFF;"><b>Ghost</b></span>
+    </td>
+    <td width="45px" style="text-align: center; font-size: 85%; line-height:12px; background: #9141CB; border-radius: 2px; -moz-border-radius: 2px; -webkit-border-radius: 2px; -khtml-border-radius: 2px; -icab-border-radius: 2px; -o-border-radius: 2px;">
+        <span style="color:#FFF;"><b>Poison</b></span>
+    </td></tr></tbody></table>
+    </td></tr>
+    <tr>
+        <td class="roundy" style="margin:auto; text-align: center; background: #FFF;">
+            Gengar
+            &nbsp;<small>Lv.</small>56
+    </td></tr>
+    <tr><td class="roundy" colspan="2" style="background: #FFF;">
+        <table class="roundy" width="100%" style="margin:auto; background: #FFF; border-collapse: separate;">
+            <tbody><tr>
+                <td class="roundy" width="50%" style="background: #492A49; border: 2px solid #492A49">
+                    <table class="roundy" width="100%" style="margin:auto; background: #FFF; border-collapse:collapse; text-align: center;" cellspacing="1" cellpadding="3">
+    <tbody><tr>
+        <td>Confuse Ray
+    </td></tr>
+    <tr>
+    <td class="roundybottom" style="background:#704170; line-height:12px;">
+        <small><span style="color:#FFF;">Ghost</span></small>
+    </td></tr></tbody></table>
+    
+    <table class="roundy" width="100%" style="margin:auto; display:none; background: #68A090; border-collapse:collapse; text-align: center;" cellspacing="1" cellpadding="3">
+    <tbody><tr>
+    <td></td>
+    <td rowspan="2">--
+    </td>
+    <td></td></tr>
+    <tr>
+    <td width="25%" style="background:transparent; line-height:12px;"><small>&nbsp;</small>
+    </td>
+    <td width="25%" style="background:transparent; line-height:12px;"><small>&nbsp;</small>
+    </td></tr></tbody></table>
+    </td>
+    <td class="roundy" width="50%" style="background: #492A49; border: 2px solid #492A49">
+        <table class="roundy" width="100%" style="margin:auto; background: #FFF; border-collapse:collapse; text-align: center;" cellspacing="1" cellpadding="3">
+            <tbody><tr>
+                <td>Night Shade</td></tr>
+    <tr>
+    <td class="roundybottom" style="background:#704170; line-height:12px;"><small>
+        <span style="color:#FFF;">Ghost</span></small>
+    </td></tr></tbody></table>
+
+    <table class="roundy" width="100%" style="margin:auto; display:none; background: #68A090; border-collapse:collapse; text-align: center;" cellspacing="1" cellpadding="3">
+    <tbody><tr>
+        <td></td>
+        <td rowspan="2">--</td>
+    <td></td></tr>
+    <tr>
+        <td width="25%" style="background:transparent; line-height:12px;"><small>&nbsp;</small></td>
+        <td width="25%" style="background:transparent; line-height:12px;"><small>&nbsp;</small></td>
+    </tr></tbody></table>
+    </td></tr>
+    
+    <tr>
+    <td class="roundy" style="background: #9B2A4F; border: 2px solid #9B2A4F">
+    <table class="roundy" width="100%" style="margin:auto; background: #FFF; border-collapse:collapse; text-align: center;" cellspacing="1" cellpadding="3">
+        <tbody><tr>
+            <td>Hypnosis</td></tr>
+        <tr>
+        <td class="roundybottom" style="background:#EF4179; line-height:12px;">
+            <small><span style="color:#FFF;">Psychic</small>
+    </td></tr></tbody></table>
+
+    <table class="roundy" width="100%" style="margin:auto; display:none; background: #68A090; border-collapse:collapse; text-align: center;" cellspacing="1" cellpadding="3">
+        <tbody><tr>
+            <td></td>
+        <td rowspan="2">--</td>
+        <td></td></tr>
+    <tr>
+    <td width="25%" style="background:transparent; line-height:12px;"></td>
+    <td width="25%" style="background:transparent; line-height:12px;"></td></tr></tbody></table>
+    </td>
+
+    <td class="roundy" style="background: #9B2A4F; border: 2px solid #9B2A4F">
+        <table class="roundy" width="100%" style="margin:auto; background: #FFF; border-collapse:collapse; text-align: center;" cellspacing="1" cellpadding="3">
+            <tbody><tr>
+                <td>Dream Eater</td></tr>
+            <tr>
+    <td class="roundybottom" style="background:#EF4179; line-height:12px;">
+        <small><span style="color:#FFF;">Psychic</small>
+    </td></tr></tbody></table>
+    
+    <table class="roundy" width="100%" style="margin:auto; display:none; background: #68A090; border-collapse:collapse; text-align: center;" cellspacing="1" cellpadding="3">
+    <tbody><tr>
+    <td rowspan="2">--</td>
+    </tr>
+    <tr>
+    <td width="25%" style="background:transparent; line-height:12px;">
+    </td>
+    <td width="25%" style="background:transparent; line-height:12px;">
+    </td></tr></tbody></table>
+    </td></tr></tbody></table>
+    </td></tr></tbody></table>
+
+  <script>
+    function togglePokemon() {
+      var pokemonList = document.getElementById("pokemon-list");
+      if (pokemonList.style.display === "none") {
+        pokemonList.style.display = "flex";
+      } else {
+        pokemonList.style.display = "none";
+      }
+    }
+  </script>
+
+<style>
+    .accordion {
+      border: 2px solid #ffcc00;
+      padding: 10px;
+      border-radius: 5px;
+      display: flex;
+      flex-direction: column; /* 必要に応じて row に変更 */
+      gap: 10px; /* アイテム間のスペース */
+
+    }
+    #trainer-info {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      max-width: 800px; /* ここで最大幅を指定 */
+      margin: 0 auto; /* 中央揃え */
+    }
+    .trainer-image {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      border: 2px solid #ffcc00;
+    }
+    
+    .pokemon-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+    
+    .pokemon {
+      flex: 1 1 calc(33.33% - 10px); /* 3列レイアウト */
+      box-sizing: border-box;
+      margin: 10px;
+      padding: 10px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      background-color: #f9f9f9;
+    }
+    
+    .pokemon-image {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      border: 2px solid #ffcc00;
+      float: left;
+      margin-right: 10px;
+    }
+    
+    .pokemon ul {
+      list-style-type: none;
+      padding-left: 0;
+      margin: 0;
+    }
+    
+    .pokemon li {
+      margin-bottom: 5px;
+    }
+  
+    /* メディアクエリでレスポンシブ対応 */
+    @media (max-width: 768px) {
+      .pokemon {
+        flex: 1 1 calc(50% - 10px); /* タブレット表示で2列 */
+      }
+    }
+    
+    @media (max-width: 480px) {
+      .pokemon {
+        flex: 1 1 100%; /* モバイル表示で1列 */
+      }
+      .pokemon li {
+        font-size: 0.9em; /* モバイルで文字を少し小さく */
+      }
+    }
+  </style>
