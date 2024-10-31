@@ -7,3 +7,4 @@ WordPressのブログでカスタムHTMLブロックで表示したいものの�
 - [レイドイベント等のまとめテーブル](raid-event-matome.html)
 - [レイド対策ポケモン](raid-recommend-pokemon.html)
 - [四天王記事のリスト](elitefour-champion-list.html)
+- [スプレッドシート→HTMLタグ](Spreadsheet_to_Custom_HTML.ipynb)
