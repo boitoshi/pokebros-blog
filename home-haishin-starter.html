@@ -70,69 +70,71 @@
     </table>
     <!-- 2つ目のテーブル -->
     <table class="haishintable">
-        <colgroup>
-            <col style="width:16.66%;">
-            <col style="width:33.33%;">
-            <col style="width:16.66%;">
-            <col style="width:33.33%;">
-        </colgroup>
-        <thead>
-            <th scope="col" colspan="4">ナエトルサンプル<img class="inline-pokepic"
+        <tr>
+            <th scope="col" colspan="3">イーブイ
+        </tr>
+        <tr>
+            <th><img src="https://www.pokebros.net/wp-content/uploads/2021/06/Bag_Cherish_Ball_Sprite.png"
+                    alt="プレシャスボール"></th>
+            <!-- 右側2列×4行を結合 -->
+            <th rowspan="4" colspan="2"><img class="inline-pokepic"
                     src="https://www.pokebros.net/wp-content/uploads/2022/11/SV-PokeIcon_133-e1669294148902.png"
-                    alt="0133イーブイ">
-            </th>
-        </thead>
-        <tbody>
-            <tr>
-                <td>親名</td>
-                <td>プレイヤーのもの</td>
-                <td>ID</td>
-                <td>プレイヤーのもの</td>
-            </tr>
-            <tr>
-                <td>出会い</td>
-                <td>Pokémon HOME</td>
-                <td></td>
-                <td>プレイヤーのもの</td>
-            </tr>
-            <tr>
-                <td>親名</td>
-                <td>プレイヤーのもの</td>
-                <td>ID</td>
-                <td>プレイヤーのもの</td>
-            </tr>
-            <tr>
-                <td>親名</td>
-                <td>プレイヤーのもの</td>
-                <td>ID</td>
-                <td>プレイヤーのもの</td>
-            </tr>
-            <tr>
-                <td>親名</td>
-                <td>プレイヤーのもの</td>
-                <td>ID</td>
-                <td>プレイヤーのもの</td>
-            </tr>
-            <tr>
-                <td>親名</td>
-                <td>プレイヤーのもの</td>
-                <td>ID</td>
-                <td>プレイヤーのもの</td>
-            </tr>
+                    alt="0133イーブイ"></th>
+        </tr>
+        <tr>
+            <th>♂</th>
+        </tr>
+        <tr>
+            <th>❖</th>
+        </tr>
+        <tr>
+            <th>Lv.5</th>
+        </tr>
+        <tr>
+            <th scope="row" rowspan="7">個体情報</th>
+            <td>テラスタイプ</td>
+            <td>ノーマル<img class="inline-pic"
+                    src="https://www.pokebros.net/wp-content/uploads/2022/11/TeraGem_Normalノーマル.png" alt="テラスタイプノーマル">
+            </td>
+        </tr>
+        <tr>
+            <td>とくせい</td>
+            <td>てきおうりょく</td>
+        </tr>
+        <tr>
+            <td>おや</td>
+            <td>POKEMONDAY25</td>
+        </tr>
+        <tr>
+            <td>ID</td>
+            <td>250227</td>
+        </tr>
+        <tr>
+            <td>出会った場所</td>
+            <td>PokémonHOME</td>
+        </tr>
+        <tr>
+            <td>わざ</td>
+            <td>たいあたり<br>しっぽをふる<br>つぶらなひとみ<br></td>
+        </tr>
+        <tr>
             <td>リボン/あかし</td>
             <td>クラシックリボン<img class="inline-pic"
                     src="https://www.pokebros.net/wp-content/uploads/2022/01/80px-Classic_Ribbon_VIII.png"
-                    alt="クラシックリボン">？
+                    alt="クラシックリボン">
             </td>
-            <td></td>
-            </tr>
-            <td>もちもの</td>
-            <td></td>
-            <td></td>
-            </tr>
-            <tr>
-                <th scope="row">備考</th>
-        </tbody>
+        </tr>
+        </tr>
+        <tr>
+            <th scope="row">配信日</th>
+            <td style="text-align:center;" colspan="2">2024/7/14〜</td>
+        </tr>
+        <tr>
+            <th scope="row">備考</th>
+            <td style="text-align:center;" colspan="2">
+                〇〇から初めてポケモンを連れてくる<br>
+                <!-- <a href="https://www.pokebros.net/gen9-genki-eevee/">個別記事があれば</a> -->
+            </td>
     </table>
 
     <!-- 3つ目のテーブル -->
@@ -185,6 +187,7 @@
         <td></td>
         <td></td>
         </tr>
+
         <tr>
             <th scope="row">備考</th>
             <td style="text-align:center;" colspan="3">
@@ -582,17 +585,18 @@
         .haishin-container .haishintable {
             flex: 1 1 calc(33.33% - 10px);
             margin: 0 auto;
-            font-size: 12px;
+            font-size: 0.7rem;
         }
 
-        /* 768px以下で1列・幅600pxに */
+        /* 768px以下で1列・幅450pxに */
         @media (max-width: 768px) {
             .haishin-container {
-                max-width: 600px;
+                max-width: 450px;
             }
 
             .haishin-container .haishintable {
                 flex: 1 1 100%;
+                font-size: 0.8rem;
             }
         }
 
@@ -611,6 +615,7 @@
             border: 1px solid rgb(160, 160, 160);
             background-color: #fffaf2;
             padding: 0.3em;
+            overflow-wrap: break-word; /* 推奨 */
         }
 
         /* 見出し（scope="col"）の設定 */
@@ -621,7 +626,7 @@
         }
 
         /* 1列目・3列目を幅16.66%、2列目・4列目を33.33%に */
-        table.haishintable tr>*:nth-child(1),
+        /* table.haishintable tr>*:nth-child(1),
         table.haishintable tr>*:nth-child(3) {
             width: 16.66%;
         }
@@ -629,7 +634,7 @@
         table.haishintable tr>*:nth-child(2),
         table.haishintable tr>*:nth-child(4) {
             width: 33.33%;
-        }
+        } */
 
         /* 画像のサイズ */
         .inline-pic {
