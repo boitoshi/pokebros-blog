@@ -144,46 +144,74 @@
         </tr>
         <tr>
             <td rowspan="2">
-                <table class="haishintable">
-                    <tr><td>ポケモン名（♂）(出身地)</td></tr>
-                    <tr><td>(ポケ画像)<img src="poke_image.png" class="inline-pokepic"></td></tr>
-                    <tr><td>(ボール)(りぼん)<img src="ball_image.png" class="inline-pic"></td></tr>
-                    <tr><td>Lv.50 <img src="region_icon.png" class="inline-pic"></td></tr>
+                <table class="nested-table">
+                    <tr>
+                        <td>ポケモン名（♂）(出身地)</td>
+                    </tr>
+                    <tr>
+                        <td>(ポケ画像)<img src="poke_image.png" class="inline-pokepic"></td>
+                    </tr>
+                    <tr>
+                        <td>(ボール)(りぼん)<img src="ball_image.png" class="inline-pic"></td>
+                    </tr>
+                    <tr>
+                        <td>Lv.50 <img src="region_icon.png" class="inline-pic"></td>
+                    </tr>
                 </table>
             </td>
             <td>
-                <table>
-                    <tr><td class="detailhead">OT:</td><td>HOME</td></tr>
-                    <tr><td class="detailhead">ID:</td><td>250212</td></tr>
-                    <tr><td class="detailhead">Ability:</td><td>Justified</td></tr>
-                    <tr><td class="detailhead">Nature:</td><td>Modest</td></tr>
+                <table class="nested-table">
+                    <tr>
+                        <td>OT:</td>
+                        <td>HOME</td>
+                    </tr>
+                    <tr>
+                        <td>ID:</td>
+                        <td>250212</td>
+                    </tr>
+                    <tr>
+                        <td>Ability:</td>
+                        <td>Justified</td>
+                    </tr>
+                    <tr>
+                        <td>Nature:</td>
+                        <td>Modest</td>
+                    </tr>
                 </table>
             </td>
             <td>
-                <table>
-                    <tr><td>Quick Guard</td></tr>
-                    <tr><td>Double Kick</td></tr>
-                    <tr><td>Aqua Tail</td></tr>
-                    <tr><td>Sacred Sword</td></tr>
+                <table class="nested-table">
+                    <tr>
+                        <td>Quick Guard</td>
+                    </tr>
+                    <tr>
+                        <td>Double Kick</td>
+                    </tr>
+                    <tr>
+                        <td>Aqua Tail</td>
+                    </tr>
+                    <tr>
+                        <td>Sacred Sword</td>
+                    </tr>
                 </table>
             </td>
         </tr>
         <tr>
             <td colspan="2">
-                <table width="100%">
+                <table class="nested-table">
                     <tr>
-                        <td class="detailhead">配信開始日</td>
+                        <td>配信開始日</td>
                         <td>2025年2月12日</td>
                     </tr>
-                  <tr>
-                        <td class="detailhead">配信条件</td>
+                    <tr>
+                        <td>配信条件</td>
                         <td>ポケモンHOMEの図鑑完成</td>
                     </tr>
                 </table>
             </td>
         </tr>
     </table>
-    
+
     <style>
         /* コンテナ */
         .haishin-container {
@@ -225,17 +253,54 @@
         table.haishintable th,
         table.haishintable td {
             border: 1px solid rgb(160, 160, 160);
-            background-color: #fffaf2;
+            background-color: #fff5e7;
             padding: 0.3em;
-            overflow-wrap: break-word; /* 推奨 */
+            overflow-wrap: break-word;
+            /* 推奨 */
         }
 
         /* 見出し（scope="col"）の設定 */
         table.haishintable th[scope='col'] {
-            background-color: #ffbd59;
+            background-color: #fca727;
             border-bottom: 2px solid #000;
             color: #fffaf2;
         }
+
+        /* ネストされたテーブル用のスタイル */
+        .nested-table {
+            width: 100%;
+            border-collapse: separate;
+            border-spacing: 0;
+            background-color: #ffffff !important;
+            /* 背景色を強制的に白に */
+            border-radius: 8px;
+            overflow: hidden;
+            font-size: 0.7rem;
+            height: 100%;
+            /* 親要素いっぱいに */
+        }
+
+        /* ネストテーブルのセル設定 */
+        .nested-table td {
+            background-color: #ffffff !important;
+            /* セルの背景も強制的に白に */
+            border-bottom: 1px solid #ffbd59;
+            border-right: 1px solid #ffbd59;
+            padding: 1px 8px;
+            position: relative;
+            /* 縦線のための位置指定 */
+        }
+
+        /* 最後の行の下線を消す */
+        .nested-table tr:last-child td {
+            border-bottom: none;
+        }
+
+        /* 最後の列の右線を消す */
+        .nested-table td:last-child {
+            border-right: none;
+        }
+
 
         /* 1列目・3列目を幅16.66%、2列目・4列目を33.33%に */
         /* table.haishintable tr>*:nth-child(1),
