@@ -1,0 +1,103 @@
+<h2>メガ比較リスト</h2>
+<h3>XYで登場したメガシンカポケモン</h3>
+<div>
+    <style>
+        .responsive-table {
+            width: 100%;
+            font-size: clamp(0.8rem, 2vw, 1rem);
+        }
+        
+        .responsive-table table {
+            width: 100%;
+            table-layout: fixed;
+            border-collapse: collapse;
+        }
+        
+        .responsive-table th,
+        .responsive-table td {
+            padding: clamp(2px, 0.5vw, 6px);
+            border: 1px solid #ddd;
+            text-align: center;
+            font-size: clamp(0.6rem, 1.2vw, 0.9rem);
+            word-break: break-word;
+            overflow-wrap: break-word;
+        }
+        
+        /* カラム幅をきれいに設定 */
+        .responsive-table th:nth-child(1),
+        .responsive-table td:nth-child(1) {
+            width: 3%; /* 図鑑NO */
+        }
+        
+        /* メガシンカ前のカラム（3つで45%） */
+        .responsive-table th:nth-child(2),
+        .responsive-table td:nth-child(2),
+        .responsive-table th:nth-child(3),
+        .responsive-table td:nth-child(3),
+        .responsive-table th:nth-child(4),
+        .responsive-table td:nth-child(4) {
+            width: 15%; /* 各15%で合計45% */
+        }
+        
+        /* メガシンカ後のカラム（3つで45%） */
+        .responsive-table th:nth-child(5),
+        .responsive-table td:nth-child(5),
+        .responsive-table th:nth-child(6),
+        .responsive-table td:nth-child(6),
+        .responsive-table th:nth-child(7),
+        .responsive-table td:nth-child(7) {
+            width: 15%; /* 各15%で合計45% */
+        }
+        
+        .responsive-table img {
+            max-width: 100%;
+            width: clamp(30px, 6vw, 60px);
+            height: auto;
+            display: block;
+            margin: 2px auto 0;
+        }
+        
+        /* スマホ用の更に小さなサイズ */
+        @media (max-width: 600px) {
+            .responsive-table {
+                font-size: 0.6rem;
+            }
+            .responsive-table th,
+            .responsive-table td {
+                padding: 1px;
+                font-size: 0.5rem;
+                line-height: 1.2;
+            }
+            .responsive-table img {
+                width: clamp(20px, 4vw, 30px);
+            }
+        }
+    </style>
+    
+    <div class="responsive-table">
+        <table>
+            <tr>
+                <th rowspan="2">図鑑NO</th>
+                <th colspan="3">メガシンカ前</th>
+                <th colspan="3">メガシンカ後</th>
+            </tr>
+            <tr>
+                <th>ポケモン名</th>
+                <th>タイプ</th>
+                <th>特性</th>
+                <th>ポケモン名</th>
+                <th>タイプ</th>
+                <th>特性</th>
+            </tr>
+            <tr>
+                <td>003</td>
+                <td>フシギバナ<br><img src="https://www.pokebros.net/wp-content/uploads/2021/06/002Bulbasaur.png" alt="フシギバナ"></td>
+                <td>くさ・どく</td>
+                <td>しんりょく<br>ようりょくそ</td>
+                <td>メガフシギバナ<br><img src="https://www.pokebros.net/wp-content/uploads/2021/06/003Venusaur.png" alt="メガフシギバナ"></td>
+                <td>くさ・どく</td>
+                <td>あついしぼう</td>
+            </tr>
+        </table>
+    </div>
+</div>
